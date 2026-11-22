@@ -79,12 +79,7 @@
 			"migrations_dir": "drizzle/migrations",
 		},
 	],
-	"r2_buckets": [
-		{
-			"binding": "BUCKET",
-			"bucket_name": "mailflare-raw",
-		},
-	],
+	// R2 removed in this fork: files are stored in Backblaze B2 (set B2_KEY_ID, B2_APPLICATION_KEY, B2_BUCKET, B2_ENDPOINT as Worker secrets).
 	"queues": {
 		"producers": [
 			{
